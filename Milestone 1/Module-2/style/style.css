@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: blue;
+}
+
+#task2 {
+    color: blue;
+    text-align: justify;
+    font-size: 20px;
+    font-family: serif;
+}
+
+.taskHeading {
+    border: 1px solid blue;
+}
+
+.taskHeading p {
+    font-weight: 700;
+    text-align: justify;
+}
+
+#firstHeading h4{
+    color: brown;
+    font-weight: 900;
+}

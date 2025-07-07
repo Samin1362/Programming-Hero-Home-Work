@@ -1,0 +1,41 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 1140px;
+  margin: 100px auto;
+}
+
+main a{
+  display: block;
+}
+
+.search-container{
+  border: 1px solid gray;
+  padding: 10px;
+  box-shadow: 10px 5px 5px grey;
+}
+
+.search-bar{
+  display: flex;
+}
+
+.panda-image{
+  width: 500px;
+  height: 500px;
+}
+
+.form-container{
+  margin-top: 20px;
+}
+
+.form-container label{
+  display: block;
+}
+
+.form-container button{
+  display: block;
+}
+

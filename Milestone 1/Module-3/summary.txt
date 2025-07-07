@@ -1,0 +1,5 @@
+----*----
+github based command and installation are done in this module. 
+git init, git add, git commit, git push, git branch. 
+And the common problems people faced. 
+----*----

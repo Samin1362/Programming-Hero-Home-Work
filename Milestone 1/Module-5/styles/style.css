@@ -30,8 +30,8 @@ body {
 }
 
 .banner {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3)),
-                    url('../images/Banner\ Image.png');
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url('../images/Banner\ Image.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -44,11 +44,11 @@ body {
   justify-content: center;
 }
 
-.banner h1{
+.banner h1 {
   font-size: 72px;
 }
 
-.banner h3{
+.banner h3 {
   font-size: 32px;
 }
 
@@ -61,6 +61,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 16px;
 }
 
@@ -71,7 +72,7 @@ section h1 {
 
 /* Second Banner Section  */
 .second-banner {
-  background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../images/Vectorrr.png');
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../images/Vectorrr.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -85,18 +86,18 @@ section h1 {
   padding: 126px 0px 126px 126px;
 }
 
-.second-banner-left h1{
+.second-banner-left h1 {
   color: white;
   font-size: 64px;
 }
 
-.second-banner-left p{
+.second-banner-left p {
   color: white;
   margin-top: 32px;
   margin-bottom: 32px;
 }
 
-.second-banner-left button{
+.second-banner-left button {
   color: white;
   font-size: 20px;
   border: none;
@@ -106,4 +107,124 @@ section h1 {
 
 .second-banner-right {
   padding: 70px 126px 126px 0px;
+}
+
+/* Location Section  */
+.location-section {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0));
+  width: 1320px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.location-section h3{
+  font-size: 32px;
+}
+
+.location-section span{
+  color: red;
+}
+
+.location-section button{
+  margin-top: 48px;
+  background-color: red;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Coming Soon Section */
+
+.coming-soon-section {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  width: 1320px;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
+.coming-soon-section h3{
+  font-size: 24px;
+  color: red;
+  font-weight: 300;
+}
+
+.coming-soon-section h1{
+  font-size: 48px;
+  color: black;
+  margin: 10px 0px;
+}
+
+.coming-soon-section p{
+  color: #070211;
+  font-size: 20px;
+}
+
+.border-image {
+  border: 15px solid red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Holiday Section  */
+
+.holidays-sale-section {
+  display: flex;
+  flex-direction: column;
+  width: 1320px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.holidays-sale-section-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 350px;
+}
+
+.holidays-sale-section-upper h4 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #070211;
+}
+
+.holidays-sale-section-upper h1 {
+  font-size: 72px;
+}
+
+.holidays-sale-section-upper p{
+  text-align: center;
+  color: #070211;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.holidays-sale-section-down {
+  display: flex;
+  margin-top: 64px;
+}
+
+.holidays-sale-section-down-left {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  z-index: 2;
+}
+
+.holidays-sale-section-down-left img{
+  width: 675px;
+  height: 575px;
+}
+
+.holidays-sale-section-down-right {
+  position: absolute;
+  bottom: 280px;
+  right: 30px;
 }

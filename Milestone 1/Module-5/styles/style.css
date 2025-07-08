@@ -27,6 +27,9 @@ body {
 .header {
   display: flex;
   justify-content: center;
+  width: 1320px;
+  height: 600px;
+  margin: 0px auto;
 }
 
 .banner {
@@ -68,6 +71,13 @@ section {
 section h1 {
   color: red;
   font-size: 88px;
+}
+
+/* First offer */
+.first-offer {
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Second Banner Section  */
@@ -118,15 +128,15 @@ section h1 {
   margin: 0px auto;
 }
 
-.location-section h3{
+.location-section h3 {
   font-size: 32px;
 }
 
-.location-section span{
+.location-section span {
   color: red;
 }
 
-.location-section button{
+.location-section button {
   margin-top: 48px;
   background-color: red;
   color: white;
@@ -149,19 +159,19 @@ section h1 {
   margin-bottom: 120px;
 }
 
-.coming-soon-section h3{
+.coming-soon-section h3 {
   font-size: 24px;
   color: red;
   font-weight: 300;
 }
 
-.coming-soon-section h1{
+.coming-soon-section h1 {
   font-size: 48px;
   color: black;
   margin: 10px 0px;
 }
 
-.coming-soon-section p{
+.coming-soon-section p {
   color: #070211;
   font-size: 20px;
 }
@@ -199,7 +209,7 @@ section h1 {
   font-size: 72px;
 }
 
-.holidays-sale-section-upper p{
+.holidays-sale-section-upper p {
   text-align: center;
   color: #070211;
   padding: 10px;
@@ -218,7 +228,7 @@ section h1 {
   z-index: 2;
 }
 
-.holidays-sale-section-down-left img{
+.holidays-sale-section-down-left img {
   width: 675px;
   height: 575px;
 }
@@ -227,4 +237,140 @@ section h1 {
   position: absolute;
   bottom: 280px;
   right: 30px;
+}
+
+/* Gifts Section  */
+
+.gift-section {
+  margin: 120px auto;
+  width: 1320px;
+  height: 1163px;
+}
+
+.gift-section-heading {
+  left: 0px;
+}
+
+.gift-section-heading h1 {
+  font-size: 48px;
+  color: black;
+}
+
+.gift-section-heading h3 {
+  color: red;
+  font-size: 24px;
+}
+
+.gift-section-heading p {
+  font-size: 20px;
+  color: rgba(7, 2, 17, 0.6);
+}
+
+.gift-section-gifts {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+  background-color: rgba(255, 0, 0, 0.05);
+  padding: 80px 0px;
+  width: 1320px;
+  height: 615px;
+  margin: 0px auto;
+  border-radius: 15px;
+}
+
+.subscribe-section img {
+  height: 150px;
+  width: 150px;
+}
+
+.subscribe-section h1 {
+  font-size: 48px;
+  color: black;
+  margin-top: 40;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p {
+  margin: 0 212px;
+  text-align: center;
+  color: rgba(7, 2, 17, 0.6);
+}
+
+.subscribe-section div {
+  margin-top: 48px;
+  display: flex;
+}
+
+.subscribe-section input {
+  font-size: 18px;
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.subscribe-section button {
+  padding: 0px 56px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 0px 50px 50px 0px;
+  cursor: pointer;
+}
+
+/* Footer Section  */
+
+footer {
+  width: 1600px;
+  height: 600px;
+  margin: 120px auto 0px auto;
+  color: white;
+  background-color: black;
+}
+
+.footer-container {
+  width: 1320px;
+  margin: 0px auto;
+  padding: 120px 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.footer-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-upper h2 {
+  font-size: 24px;
+  font-weight: 200;
+}
+
+.footer-contact {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-middle {
+  margin: 48px;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-down {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-down h3 {
+  font-weight: 200;
+  font-size: 24px;
 }

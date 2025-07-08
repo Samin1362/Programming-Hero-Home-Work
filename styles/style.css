@@ -1,0 +1,324 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.merriweather-primary-font {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+.inter-primary-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  margin: 0px auto;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)),
+    url('../images/Banner\ Image.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 50px 130px 0px 130px;
+  width: 1320px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner h1 {
+  font-size: 72px;
+}
+
+.banner h3 {
+  font-size: 32px;
+}
+
+.banner-title {
+  color: white;
+}
+
+section {
+  margin: 120px 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+section h1 {
+  color: red;
+  font-size: 88px;
+}
+
+/* Second Banner Section  */
+.second-banner {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('../images/Vectorrr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1320px;
+  height: 600px;
+  display: flex;
+  gap: 90px;
+}
+
+.second-banner-left {
+  padding: 126px 0px 126px 126px;
+}
+
+.second-banner-left h1 {
+  color: white;
+  font-size: 64px;
+}
+
+.second-banner-left p {
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.second-banner-left button {
+  color: white;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.second-banner-right {
+  padding: 70px 126px 126px 0px;
+}
+
+/* Location Section  */
+.location-section {
+  background-image: linear-gradient(to bottom, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0));
+  width: 1320px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 0px auto;
+}
+
+.location-section h3{
+  font-size: 32px;
+}
+
+.location-section span{
+  color: red;
+}
+
+.location-section button{
+  margin-top: 48px;
+  background-color: red;
+  color: white;
+  padding: 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Coming Soon Section */
+
+.coming-soon-section {
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+  width: 1320px;
+  margin: 0px auto;
+  margin-top: 30px;
+  margin-bottom: 120px;
+}
+
+.coming-soon-section h3{
+  font-size: 24px;
+  color: red;
+  font-weight: 300;
+}
+
+.coming-soon-section h1{
+  font-size: 48px;
+  color: black;
+  margin: 10px 0px;
+}
+
+.coming-soon-section p{
+  color: #070211;
+  font-size: 20px;
+}
+
+.border-image {
+  border: 15px solid red;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+/* Holiday Section  */
+
+.holidays-sale-section {
+  display: flex;
+  flex-direction: column;
+  width: 1320px;
+  margin: 0px auto;
+  position: relative;
+}
+
+.holidays-sale-section-upper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 350px;
+}
+
+.holidays-sale-section-upper h4 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #070211;
+}
+
+.holidays-sale-section-upper h1 {
+  font-size: 72px;
+}
+
+.holidays-sale-section-upper p{
+  text-align: center;
+  color: #070211;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.holidays-sale-section-down {
+  display: flex;
+  margin-top: 64px;
+}
+
+.holidays-sale-section-down-left {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+  z-index: 2;
+}
+
+.holidays-sale-section-down-left img{
+  width: 675px;
+  height: 575px;
+}
+
+.holidays-sale-section-down-right {
+  position: absolute;
+  bottom: 280px;
+  right: 30px;
+}
+
+/* Gifts Section  */
+
+.gift-section {
+  margin: 120px auto;
+  width: 1320px;
+  height: 1163px;
+}
+
+.gift-section-heading {
+  left: 0px;
+}
+
+.gift-section-heading h1{
+  font-size: 48px;
+  color: black;
+}
+
+.gift-section-heading h3{
+  color: red;
+  font-size: 24px;
+}
+
+.gift-section-heading p{
+  font-size: 20px;
+  color: rgba(7, 2, 17, 0.6);
+}
+
+.gift-section-gifts {
+  margin-top: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+/* Subscribe Section */
+
+.subscribe-section {
+  background-color: rgba(255, 0, 0, 0.05);
+  padding: 80px 0px;
+  width: 1320px;
+  height: 615px;
+  margin: 0px auto;
+  border-radius: 15px;
+}
+
+.subscribe-section img{
+  height: 150px;
+  width: 150px;
+}
+
+.subscribe-section h1{
+  font-size: 48px;
+  color: black;
+  margin-top: 40;
+  margin-bottom: 20px;
+}
+
+.subscribe-section p{
+  margin: 0 212px;
+  text-align: center;
+  color: rgba(7, 2, 17, 0.6);
+}
+
+.subscribe-section div{
+  margin-top: 48px;
+  display: flex;
+}
+
+.subscribe-section input{
+  font-size: 18px;
+  padding: 25px;
+  border: 1px solid white;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.subscribe-section button{
+  padding: 0px 56px;
+  background-color: red;
+  color: white;
+  font-size: 20px;
+  border-radius: 0px 50px 50px 0px;
+  cursor: pointer;
+}
+
+/* Footer Section  */
+
+footer{
+  width: 100%;
+  height: 600px;
+  margin-top: 120px;
+  color: white;
+  background-color: black;
+}

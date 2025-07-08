@@ -68,3 +68,42 @@ section h1 {
   color: red;
   font-size: 88px;
 }
+
+/* Second Banner Section  */
+.second-banner {
+  background-image: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.3)), url('../images/Vectorrr.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 1320px;
+  height: 600px;
+  display: flex;
+  gap: 90px;
+}
+
+.second-banner-left {
+  padding: 126px 0px 126px 126px;
+}
+
+.second-banner-left h1{
+  color: white;
+  font-size: 64px;
+}
+
+.second-banner-left p{
+  color: white;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.second-banner-left button{
+  color: white;
+  font-size: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.second-banner-right {
+  padding: 70px 126px 126px 0px;
+}

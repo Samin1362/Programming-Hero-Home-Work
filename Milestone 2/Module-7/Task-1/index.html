@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout Viewport</title>
+  <style>
+
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      margin-top: 20px;
+    }
+
+    section {
+      max-width: 1140px;
+      height: 90vh;
+      margin: 0px auto;
+      display: grid;
+      grid-template-columns: 25% 75%;
+      gap: 20px;
+    }
+
+    section div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section div h1 {
+      font-size: 3rem;
+    }
+
+    
+    .left {
+      background-color: lightgray;
+      border-radius: 10px;
+    }
+
+    .right {
+      background-color: beige;
+      border-radius: 10px;
+    }
+
+    @media screen and (max-width: 576px) {
+      section {
+        grid-template-columns: 100%;
+      }
+    }
+
+    
+  </style>
+</head>
+<body>
+  <section>
+    <div class="left">
+      <h1>Left</h1>
+    </div>
+    <div class="right">
+      <h1>Right</h1>
+    </div>
+  </section>
+</body>
+</html>

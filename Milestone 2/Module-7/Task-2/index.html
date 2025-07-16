@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Layouts</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .section {
+      margin: 20px auto;
+      width: 1140px;
+      height: 90vh;
+      border-radius: 10px;
+    }
+
+    .upper {
+      background-color: white;
+      border-bottom: 2px solid black;
+      padding: 10px;
+    }
+
+    .upper h1 {
+      text-align: center;
+    }
+
+    /* Box Style */
+
+    .boxes {
+      background-color: lightcyan;
+      height: 50%;
+      padding: 2em;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 200px);
+      gap: 20px;
+    }
+
+    .box1 {
+      background-color: pink;
+      border-radius: 10px;
+      grid-row: span 2;
+    }
+
+    .box2 {
+      background-color: orange;
+      border-radius: 10px;
+      grid-column: span 2;
+    }
+
+    .box3 {
+      background-color: violet;
+      border-radius: 10px;
+    }
+
+    .box4 {
+      background-color: grey;
+      border-radius: 10px;
+    }
+
+    @media screen and (min-width: 577px) and (max-width: 992px) {
+      .boxes {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 200px);
+      }
+
+      .box1 {
+        background-color: lightgreen;
+        border-radius: 10px;
+      }
+
+      .box2 {
+        background-color: orange;
+        border-radius: 10px;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <section class="section">
+    <div class="upper">
+      <h1>Responsive Grid Box practice</h1>
+    </div>
+    <div class="boxes">
+      <h1 class="box1">1</h1>
+      <h1 class="box2">2</h1>
+      <h1 class="box3">3</h1>
+      <h1 class="box4">4</h1>
+    </div>
+  </section>
+</body>
+
+</html>

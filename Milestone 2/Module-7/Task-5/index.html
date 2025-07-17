@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vikings Army Responsive Practice</title>
+
+  <style>
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      background-color: azure;
+    }
+
+    header {
+      width: 100%;
+      background-color: white;
+      font-size: 2em;
+      display: flex;
+      justify-content: center;
+      padding: 20px 0px;
+      border-bottom: 3px solid black;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      max-width: 1140px;
+      margin: 0px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .card-image,
+    .card-content {
+      width: 100vh;
+    }
+
+    .card-content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .reverse {
+      flex-direction: row-reverse;
+    }
+
+    .btn-primary {
+      background-color: lightblue;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 10px 20px;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 576px) {
+      .card {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
+      .card-container {
+        width: 100%;
+      }
+
+      .card-image,
+      .card-content {
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (min-width: 576px) and (max-width: 992px) {
+      .card {
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+      }
+
+      .card-container {
+        width: 100%;
+      }
+
+      .card-image,
+      .card-content {
+        max-width: 90%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Vikings Army Responsive Practice</h1>
+  </header>
+  <main>
+    <div class="card-container">
+      <div class="card">
+        <div class="card-image">
+          <img src="images/army-1.jpg" alt="">
+        </div>
+        <div class="card-content">
+          <h2>Viking Army 1</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam possimus laborum quas!
+            Consequatur eligendi laborum error, distinctio expedita ipsa! Est qui itaque eos nemo sequi, dicta officia
+            molestias repellendus assumenda provident. Earum, qui voluptates porro et libero dolorum asperiores. Aliquid
+            dolores necessitatibus sunt totam doloribus tempore aut soluta ex eum eos nisi dignissimos reprehenderit
+            cupiditate dolorem molestias exercitationem vel itaque blanditiis ducimus dicta provident nam voluptatum,
+            sed laborum? Similique, repellendus optio voluptatibus vel cum itaque commodi pariatur officia facilis
+            magnam tempore a soluta. Quibusdam perferendis sit harum ullam dolore libero sequi dicta eligendi similique
+            aliquam recusandae at, adipisci repudiandae.</p>
+          <br>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, commodi doloribus aspernatur, consequatur
+            atque asperiores alias harum ut aut optio deserunt officia natus odit repellendus, doloremque expedita unde
+            non eveniet culpa cum. Cumque quas impedit ipsam ratione deleniti commodi quibusdam veritatis natus labore
+            possimus fugiat totam tenetur dolore minima aliquid suscipit, magnam tempore? Rem nobis non eos? Recusandae,
+            architecto dolorem.</p>
+          <div class="btn-primary">READ MORE</div>
+        </div>
+      </div>
+      <div class="card reverse">
+        <div class="card-image">
+          <img src="images/army-2.jpg" alt="">
+        </div>
+        <div class="card-content">
+          <h2>Viking Army 2</h2>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus nam possimus laborum quas!
+            Consequatur eligendi laborum error, distinctio expedita ipsa! Est qui itaque eos nemo sequi, dicta officia
+            molestias repellendus assumenda provident. Earum, qui voluptates porro et libero dolorum asperiores. Aliquid
+            dolores necessitatibus sunt totam doloribus tempore aut soluta ex eum eos nisi dignissimos reprehenderit
+            cupiditate dolorem molestias exercitationem vel itaque blanditiis ducimus dicta provident nam voluptatum,
+            sed laborum? Similique, repellendus optio voluptatibus vel cum itaque commodi pariatur officia facilis
+            magnam tempore a soluta. Quibusdam perferendis sit harum ullam dolore libero sequi dicta eligendi similique
+            aliquam recusandae at, adipisci repudiandae.</p>
+          <br>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio, commodi doloribus aspernatur, consequatur
+            atque asperiores alias harum ut aut optio deserunt officia natus odit repellendus, doloremque expedita unde
+            non eveniet culpa cum. Cumque quas impedit ipsam ratione deleniti commodi quibusdam veritatis natus labore
+            possimus fugiat totam tenetur dolore minima aliquid suscipit, magnam tempore? Rem nobis non eos? Recusandae,
+            architecto dolorem.</p>
+          <div class="btn-primary">READ MORE</div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

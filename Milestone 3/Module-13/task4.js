@@ -8,4 +8,7 @@
 
 // Explain your answers.
 
-// it will return a boolean value because isNaN is checking wheather a number is a real number or not. 
+/**
+ * it will return a boolean value because isNaN is checking wheather a 
+ * number is a real number or not. 
+ */

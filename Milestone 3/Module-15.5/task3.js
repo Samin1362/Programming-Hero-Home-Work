@@ -8,3 +8,7 @@
 
 // Print a message to the console indicating whether the element is present in the array or not.
 
+const books = ["herry potter", "house of dragon", "game of thrones", "web development"];
+
+console.log(books.includes("house of dragon"));
+console.log(books.indexOf("house"));

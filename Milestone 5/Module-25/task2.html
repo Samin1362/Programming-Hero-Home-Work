@@ -1,11 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 25 task 2</title>
+  </head>
+  <body>
+    <main>
+      <h1>DOM Event Delegate</h1>
+      <ul id="items-list">
+        <li class="items">item 1</li>
+        <li class="items">item 2</li>
+        <li class="items">item 3</li>
+        <li class="items">item 4</li>
+      </ul>
+
+      <button id="button">Add Item</button>
+    </main>
+
+    <script>
+      // const items = document.getElementsByClassName("items")
+
+      // for (const item of items){
+      //   item.addEventListener("click", (e) => {
+      //     e.target.parentNode.removeChild(e.target);
+      //   })
+      // }
+
+      //Event Delegate
+      const list = document.getElementById("items-list").addEventListener("click", (e)=> {
+        e.target.parentNode.removeChild(e.target);
+      })
+
+      document.getElementById("button").addEventListener("mouseenter", ()=> {
+        const list = document.getElementsByTagName("ul")[0];
+        const item = document.createElement("li");
+        item.innerText = "New item";
+        list.appendChild(item);
+      })
+    </script>
+  </body>
 </html>

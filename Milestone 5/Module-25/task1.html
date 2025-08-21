@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 25 Github secret info</title>
+  </head>
+  <body>
+    <main>
+      <h1>Secrete Info</h1>
+      <input id="input" type="text" placeholder="Write delete" />
+      <button id="button" disabled>Delete</button>
+    </main>
+
+    <script>
+
+      document.getElementById("input").addEventListener("keyup", (e) => {
+        const button = document.getElementById("button");
+        console.log(e.target.value)
+        if(e.target.value === "delete"){
+          button.removeAttribute("disabled");
+        } else{
+          button.setAttribute("disabled", "true")
+        }
+      })
+
+    </script>
+  </body>
+</html>

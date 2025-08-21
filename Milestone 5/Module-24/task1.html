@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 24 Task 1</title>
+
+    <style>
+      .border {
+        border: 1px solid red;
+        padding: 5px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <main>
+      <h1>Welcome to my DOM</h1>
+      <ul>
+        <li>Bag</li>
+        <li>Earphone</li>
+        <li>Laptop</li>
+      </ul>
+
+      <section>
+        <h1>I love food</h1>
+        <ul>
+          <li id="rice">Rice</li>
+          <li class="curry">Beef</li>
+          <li class="curry">Mutton</li>
+          <li class="curry">Chicken</li>
+        </ul>
+      </section>
+    </main>
+
+    <script>
+      // const list = document.getElementsByTagName("li");
+      // for (const item of list) {
+      //   console.log(item.innerText);
+      // }
+
+      const curries = document.getElementsByClassName("curry");
+      for(const curry of curries){
+        console.log(curry.innerText);
+      }
+
+      const rice = document.getElementById("rice");
+      rice.innerText = "Fried Rice"
+      rice.classList.add("border")
+      console.log(rice)
+      console.log(rice.parentNode)
+
+      const parentList = document.getElementsByTagName("ul")[0];
+      const dal = document.createElement('li');
+      dal.innerText = "Dal"
+      dal.classList.add("border");
+      parentList.appendChild(dal);
+
+
+    </script>
+  </body>
+</html>

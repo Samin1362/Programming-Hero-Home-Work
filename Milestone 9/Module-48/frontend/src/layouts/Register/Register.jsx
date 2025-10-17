@@ -1,24 +1,17 @@
-import { createUserWithEmailAndPassword } from "firebase/auth";
-import React from "react";
-import { auth } from "../../firebase/firebase.init";
-import { AuthContext } from "../../main";
 import { use } from "react";
-
+import { AuthContext } from "../../contexts/AuthContext/AuthContext";
 
 const Register = () => {
-
-  const userInfo = use(AuthContext);
-  console.log(userInfo);
+  const { createUser } = use(AuthContext);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
 
-    createUserWithEmailAndPassword(auth, email, password)
+    createUser(email, password)
       .then((result) => console.log(result))
       .catch((e) => console.log(e));
-
   };
 
   return (

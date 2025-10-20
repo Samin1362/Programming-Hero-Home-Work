@@ -12,7 +12,12 @@
   --color-base-200: #706F6F;
 }
 
-.active {
+.active > h1 {
   text-decoration: underline;
   font-weight: bold;
+}
+
+.active > h2 {
+  text-decoration: underline;
+  color: black;
 }

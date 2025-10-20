@@ -7,9 +7,9 @@ const Navbar = () => {
     <div className='mt-[20px] flex items-center justify-between'>
       <div></div>
       <div className='flex gap-4 text-base-200'>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/about">About</NavLink>
-        <NavLink to="/career">Career</NavLink>
+        <NavLink to="/"><h1>Home</h1></NavLink>
+        <NavLink to="/about"><h1>About</h1></NavLink>
+        <NavLink to="/career"><h1>Career</h1></NavLink>
       </div>
       <div className='flex gap-2'>
         <img src={user} alt="" />

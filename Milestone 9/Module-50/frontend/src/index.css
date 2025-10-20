@@ -3,3 +3,16 @@
   themes: light --default;
 }
 
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
+  --color-primary: #D72050;
+  --color-secondary: #403F3F;
+  --color-base-300: #F3F3F3;
+  --color-base-200: #706F6F;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
